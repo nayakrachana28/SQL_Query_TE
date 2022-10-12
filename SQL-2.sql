@@ -216,4 +216,53 @@ select LTRIM('          Hi World') as Reverse_String
 --DATETIME FUNCTION
 -------------------------------------------
 
---1.
+--1.GETDATE() -> Return current system date and time
+
+SELECT GETDATE() as CurrentDatetime
+
+--2.DATRPART() -> Return the part of date or time
+
+select DATEPART(day,GETDATE()) as currentdate
+select DATEPART(month,GETDATE()) as currentMonth
+
+--3.DATEDIFF()
+
+select DATEDIFF(hour,09-10-2022,10-10-2022) as DiffBetweenhours
+
+--4.Convert()
+select CONVERT(varchar(30),Getdate(),110)
+
+
+--MATH FUNCTION
+--------------------------------------------
+
+--1. ABS
+select ABS(-10.0) as ABS
+
+--2.CEILING
+select CEILING(123.67) as CEILING
+
+--3.FLOOR
+select FLOOR(123.67) as FLOOR
+
+--4.LOG
+select LOG(123.67) as LOG
+
+--5.POWER
+select POWER(2,3) as POWER
+
+--6.ROUND
+select ROUND(267.8907787,3) as ROUND
+
+--7.SQRT
+select SQRT(10) as SQRT
+
+--8.SQUARE
+select SQUARE(8) as SQUARE
+
+--9.PI()
+select PI() as PI
+
+
+
+
